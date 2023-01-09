@@ -14,6 +14,7 @@
 		E6AB6BC4296C91FE00951C77 /* Ridna_MovaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AB6BC3296C91FE00951C77 /* Ridna_MovaTests.swift */; };
 		E6AB6BCE296C91FE00951C77 /* Ridna_MovaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AB6BCD296C91FE00951C77 /* Ridna_MovaUITests.swift */; };
 		E6AB6BD0296C91FE00951C77 /* Ridna_MovaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AB6BCF296C91FE00951C77 /* Ridna_MovaUITestsLaunchTests.swift */; };
+		E6AB6BDD296C93C000951C77 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AB6BDC296C93C000951C77 /* GameView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		E6AB6BC9296C91FE00951C77 /* Ridna MovaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ridna MovaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6AB6BCD296C91FE00951C77 /* Ridna_MovaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ridna_MovaUITests.swift; sourceTree = "<group>"; };
 		E6AB6BCF296C91FE00951C77 /* Ridna_MovaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ridna_MovaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E6AB6BDC296C93C000951C77 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				E6AB6BB4296C91FD00951C77 /* ContentView.swift */,
 				E6AB6BB6296C91FE00951C77 /* Assets.xcassets */,
 				E6AB6BB8296C91FE00951C77 /* Preview Content */,
+				E6AB6BDC296C93C000951C77 /* GameView.swift */,
 			);
 			path = "Ridna Mova";
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6AB6BB5296C91FD00951C77 /* ContentView.swift in Sources */,
+				E6AB6BDD296C93C000951C77 /* GameView.swift in Sources */,
 				E6AB6BB3296C91FD00951C77 /* Ridna_MovaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
