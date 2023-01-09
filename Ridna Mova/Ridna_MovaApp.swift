@@ -11,7 +11,7 @@ import SwiftUI
 struct Ridna_MovaApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            GameView(game: GameViewModel(category: "animals"), startUpView: StartupViewModel(), mainMenuView: MainMenuViewModel(), howToPlayView: HowToPlayViewModel())
         }
     }
 }

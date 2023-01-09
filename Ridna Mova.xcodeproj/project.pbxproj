@@ -8,13 +8,38 @@
 
 /* Begin PBXBuildFile section */
 		E6AB6BB3296C91FD00951C77 /* Ridna_MovaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AB6BB2296C91FD00951C77 /* Ridna_MovaApp.swift */; };
-		E6AB6BB5296C91FD00951C77 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AB6BB4296C91FD00951C77 /* ContentView.swift */; };
 		E6AB6BB7296C91FE00951C77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6AB6BB6296C91FE00951C77 /* Assets.xcassets */; };
 		E6AB6BBA296C91FE00951C77 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6AB6BB9296C91FE00951C77 /* Preview Assets.xcassets */; };
 		E6AB6BC4296C91FE00951C77 /* Ridna_MovaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AB6BC3296C91FE00951C77 /* Ridna_MovaTests.swift */; };
 		E6AB6BCE296C91FE00951C77 /* Ridna_MovaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AB6BCD296C91FE00951C77 /* Ridna_MovaUITests.swift */; };
 		E6AB6BD0296C91FE00951C77 /* Ridna_MovaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AB6BCF296C91FE00951C77 /* Ridna_MovaUITestsLaunchTests.swift */; };
-		E6AB6BDD296C93C000951C77 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AB6BDC296C93C000951C77 /* GameView.swift */; };
+		E6AB6BE2296C9D5500951C77 /* HowToPlayLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AB6BE1296C9D5500951C77 /* HowToPlayLogic.swift */; };
+		E6AB6BE4296C9D9000951C77 /* MainMenuLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AB6BE3296C9D9000951C77 /* MainMenuLogic.swift */; };
+		E6AB6BE6296C9DDE00951C77 /* StartupViewLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AB6BE5296C9DDE00951C77 /* StartupViewLogic.swift */; };
+		E6AB6BE8296C9E2900951C77 /* GameLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AB6BE7296C9E2900951C77 /* GameLogic.swift */; };
+		E6AB6BEA296C9E8D00951C77 /* SpeechSynthesizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AB6BE9296C9E8D00951C77 /* SpeechSynthesizer.swift */; };
+		E6AB6BEC296C9EEB00951C77 /* PopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AB6BEB296C9EEB00951C77 /* PopUp.swift */; };
+		E6AB6BEE296C9F5900951C77 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AB6BED296C9F5900951C77 /* GameViewModel.swift */; };
+		E6AB6BF0296CA04300951C77 /* StartupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AB6BEF296CA04300951C77 /* StartupViewModel.swift */; };
+		E6AB6BF2296CA0B700951C77 /* MainMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AB6BF1296CA0B700951C77 /* MainMenuViewModel.swift */; };
+		E6AB6BF4296CA0E400951C77 /* HowToPlayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AB6BF3296CA0E400951C77 /* HowToPlayViewModel.swift */; };
+		E6AB6BF6296CA1B900951C77 /* HowToPlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AB6BF5296CA1B900951C77 /* HowToPlay.swift */; };
+		E6AB6BF8296CA27B00951C77 /* EndOfGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AB6BF7296CA27B00951C77 /* EndOfGameView.swift */; };
+		E6AB6BFB296CA33C00951C77 /* PlaySoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AB6BFA296CA33C00951C77 /* PlaySoundButton.swift */; };
+		E6AB6BFD296CA3A400951C77 /* BlackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AB6BFC296CA3A400951C77 /* BlackButton.swift */; };
+		E6AB6C00296CA42100951C77 /* VStackExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AB6BFF296CA42100951C77 /* VStackExtensions.swift */; };
+		E6AB6C02296CA55200951C77 /* StartupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AB6C01296CA55200951C77 /* StartupView.swift */; };
+		E6AB6C04296CA5AA00951C77 /* CorrectAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AB6C03296CA5AA00951C77 /* CorrectAnswer.swift */; };
+		E6AB6C07296CA5DF00951C77 /* IncorrectAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AB6C06296CA5DF00951C77 /* IncorrectAnswer.swift */; };
+		E6AB6C09296CA64200951C77 /* CurrRoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AB6C08296CA64200951C77 /* CurrRoundView.swift */; };
+		E6AB6C0B296CA69100951C77 /* PictureGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AB6C0A296CA69100951C77 /* PictureGrid.swift */; };
+		E6AB6C0D296CA6FA00951C77 /* CurrentStageAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AB6C0C296CA6FA00951C77 /* CurrentStageAnswer.swift */; };
+		E6AB6C0F296CA73200951C77 /* TopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AB6C0E296CA73200951C77 /* TopBar.swift */; };
+		E6AB6C11296CA78800951C77 /* Rules.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AB6C10296CA78800951C77 /* Rules.swift */; };
+		E6AB6C13296CA7DD00951C77 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AB6C12296CA7DD00951C77 /* GameView.swift */; };
+		E6AB6C15296CA85A00951C77 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AB6C14296CA85A00951C77 /* MainMenu.swift */; };
+		E6B058B7296CACAB00F87A38 /* food.txt in Resources */ = {isa = PBXBuildFile; fileRef = E6B058B6296CACAB00F87A38 /* food.txt */; };
+		E6B058B9296CACDF00F87A38 /* animals.txt in Resources */ = {isa = PBXBuildFile; fileRef = E6B058B8296CACDF00F87A38 /* animals.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +62,6 @@
 /* Begin PBXFileReference section */
 		E6AB6BAF296C91FD00951C77 /* Ridna Mova.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ridna Mova.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6AB6BB2296C91FD00951C77 /* Ridna_MovaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ridna_MovaApp.swift; sourceTree = "<group>"; };
-		E6AB6BB4296C91FD00951C77 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E6AB6BB6296C91FE00951C77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E6AB6BB9296C91FE00951C77 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E6AB6BBF296C91FE00951C77 /* Ridna MovaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ridna MovaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,7 +69,33 @@
 		E6AB6BC9296C91FE00951C77 /* Ridna MovaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ridna MovaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6AB6BCD296C91FE00951C77 /* Ridna_MovaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ridna_MovaUITests.swift; sourceTree = "<group>"; };
 		E6AB6BCF296C91FE00951C77 /* Ridna_MovaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ridna_MovaUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		E6AB6BDC296C93C000951C77 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		E6AB6BE1296C9D5500951C77 /* HowToPlayLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToPlayLogic.swift; sourceTree = "<group>"; };
+		E6AB6BE3296C9D9000951C77 /* MainMenuLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuLogic.swift; sourceTree = "<group>"; };
+		E6AB6BE5296C9DDE00951C77 /* StartupViewLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupViewLogic.swift; sourceTree = "<group>"; };
+		E6AB6BE7296C9E2900951C77 /* GameLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameLogic.swift; sourceTree = "<group>"; };
+		E6AB6BE9296C9E8D00951C77 /* SpeechSynthesizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechSynthesizer.swift; sourceTree = "<group>"; };
+		E6AB6BEB296C9EEB00951C77 /* PopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUp.swift; sourceTree = "<group>"; };
+		E6AB6BED296C9F5900951C77 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		E6AB6BEF296CA04300951C77 /* StartupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupViewModel.swift; sourceTree = "<group>"; };
+		E6AB6BF1296CA0B700951C77 /* MainMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewModel.swift; sourceTree = "<group>"; };
+		E6AB6BF3296CA0E400951C77 /* HowToPlayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToPlayViewModel.swift; sourceTree = "<group>"; };
+		E6AB6BF5296CA1B900951C77 /* HowToPlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToPlay.swift; sourceTree = "<group>"; };
+		E6AB6BF7296CA27B00951C77 /* EndOfGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndOfGameView.swift; sourceTree = "<group>"; };
+		E6AB6BFA296CA33C00951C77 /* PlaySoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySoundButton.swift; sourceTree = "<group>"; };
+		E6AB6BFC296CA3A400951C77 /* BlackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackButton.swift; sourceTree = "<group>"; };
+		E6AB6BFF296CA42100951C77 /* VStackExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VStackExtensions.swift; sourceTree = "<group>"; };
+		E6AB6C01296CA55200951C77 /* StartupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupView.swift; sourceTree = "<group>"; };
+		E6AB6C03296CA5AA00951C77 /* CorrectAnswer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorrectAnswer.swift; sourceTree = "<group>"; };
+		E6AB6C06296CA5DF00951C77 /* IncorrectAnswer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncorrectAnswer.swift; sourceTree = "<group>"; };
+		E6AB6C08296CA64200951C77 /* CurrRoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrRoundView.swift; sourceTree = "<group>"; };
+		E6AB6C0A296CA69100951C77 /* PictureGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureGrid.swift; sourceTree = "<group>"; };
+		E6AB6C0C296CA6FA00951C77 /* CurrentStageAnswer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentStageAnswer.swift; sourceTree = "<group>"; };
+		E6AB6C0E296CA73200951C77 /* TopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBar.swift; sourceTree = "<group>"; };
+		E6AB6C10296CA78800951C77 /* Rules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rules.swift; sourceTree = "<group>"; };
+		E6AB6C12296CA7DD00951C77 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		E6AB6C14296CA85A00951C77 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
+		E6B058B6296CACAB00F87A38 /* food.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = food.txt; sourceTree = "<group>"; };
+		E6B058B8296CACDF00F87A38 /* animals.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = animals.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,14 +146,14 @@
 		E6AB6BB1296C91FD00951C77 /* Ridna Mova */ = {
 			isa = PBXGroup;
 			children = (
-				E6AB6BE0296C9A5700951C77 /* ViewModels */,
 				E6AB6BDE296C9A3000951C77 /* Views */,
+				E6AB6BE0296C9A5700951C77 /* ViewModels */,
 				E6AB6BDF296C9A4000951C77 /* Models */,
 				E6AB6BB2296C91FD00951C77 /* Ridna_MovaApp.swift */,
-				E6AB6BB4296C91FD00951C77 /* ContentView.swift */,
+				E6B058B8296CACDF00F87A38 /* animals.txt */,
+				E6B058B6296CACAB00F87A38 /* food.txt */,
 				E6AB6BB6296C91FE00951C77 /* Assets.xcassets */,
 				E6AB6BB8296C91FE00951C77 /* Preview Content */,
-				E6AB6BDC296C93C000951C77 /* GameView.swift */,
 			);
 			path = "Ridna Mova";
 			sourceTree = "<group>";
@@ -136,6 +186,20 @@
 		E6AB6BDE296C9A3000951C77 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E6AB6BFE296CA3FF00951C77 /* Extensions */,
+				E6AB6BF9296CA31C00951C77 /* Buttons */,
+				E6AB6BF5296CA1B900951C77 /* HowToPlay.swift */,
+				E6AB6BF7296CA27B00951C77 /* EndOfGameView.swift */,
+				E6AB6C01296CA55200951C77 /* StartupView.swift */,
+				E6AB6C03296CA5AA00951C77 /* CorrectAnswer.swift */,
+				E6AB6C06296CA5DF00951C77 /* IncorrectAnswer.swift */,
+				E6AB6C08296CA64200951C77 /* CurrRoundView.swift */,
+				E6AB6C0A296CA69100951C77 /* PictureGrid.swift */,
+				E6AB6C0C296CA6FA00951C77 /* CurrentStageAnswer.swift */,
+				E6AB6C0E296CA73200951C77 /* TopBar.swift */,
+				E6AB6C10296CA78800951C77 /* Rules.swift */,
+				E6AB6C12296CA7DD00951C77 /* GameView.swift */,
+				E6AB6C14296CA85A00951C77 /* MainMenu.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -143,6 +207,12 @@
 		E6AB6BDF296C9A4000951C77 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E6AB6BE1296C9D5500951C77 /* HowToPlayLogic.swift */,
+				E6AB6BE3296C9D9000951C77 /* MainMenuLogic.swift */,
+				E6AB6BE5296C9DDE00951C77 /* StartupViewLogic.swift */,
+				E6AB6BE7296C9E2900951C77 /* GameLogic.swift */,
+				E6AB6BE9296C9E8D00951C77 /* SpeechSynthesizer.swift */,
+				E6AB6BEB296C9EEB00951C77 /* PopUp.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -150,8 +220,29 @@
 		E6AB6BE0296C9A5700951C77 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				E6AB6BED296C9F5900951C77 /* GameViewModel.swift */,
+				E6AB6BEF296CA04300951C77 /* StartupViewModel.swift */,
+				E6AB6BF1296CA0B700951C77 /* MainMenuViewModel.swift */,
+				E6AB6BF3296CA0E400951C77 /* HowToPlayViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E6AB6BF9296CA31C00951C77 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				E6AB6BFA296CA33C00951C77 /* PlaySoundButton.swift */,
+				E6AB6BFC296CA3A400951C77 /* BlackButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		E6AB6BFE296CA3FF00951C77 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E6AB6BFF296CA42100951C77 /* VStackExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +350,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6AB6BBA296C91FE00951C77 /* Preview Assets.xcassets in Resources */,
+				E6B058B7296CACAB00F87A38 /* food.txt in Resources */,
+				E6B058B9296CACDF00F87A38 /* animals.txt in Resources */,
 				E6AB6BB7296C91FE00951C77 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,9 +377,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6AB6BB5296C91FD00951C77 /* ContentView.swift in Sources */,
-				E6AB6BDD296C93C000951C77 /* GameView.swift in Sources */,
+				E6AB6BE2296C9D5500951C77 /* HowToPlayLogic.swift in Sources */,
+				E6AB6BEC296C9EEB00951C77 /* PopUp.swift in Sources */,
+				E6AB6BF4296CA0E400951C77 /* HowToPlayViewModel.swift in Sources */,
+				E6AB6C00296CA42100951C77 /* VStackExtensions.swift in Sources */,
+				E6AB6C0B296CA69100951C77 /* PictureGrid.swift in Sources */,
+				E6AB6BEA296C9E8D00951C77 /* SpeechSynthesizer.swift in Sources */,
+				E6AB6C02296CA55200951C77 /* StartupView.swift in Sources */,
+				E6AB6BF0296CA04300951C77 /* StartupViewModel.swift in Sources */,
+				E6AB6BE6296C9DDE00951C77 /* StartupViewLogic.swift in Sources */,
+				E6AB6C07296CA5DF00951C77 /* IncorrectAnswer.swift in Sources */,
+				E6AB6C0F296CA73200951C77 /* TopBar.swift in Sources */,
+				E6AB6C13296CA7DD00951C77 /* GameView.swift in Sources */,
+				E6AB6BE4296C9D9000951C77 /* MainMenuLogic.swift in Sources */,
+				E6AB6BF2296CA0B700951C77 /* MainMenuViewModel.swift in Sources */,
+				E6AB6C11296CA78800951C77 /* Rules.swift in Sources */,
+				E6AB6C04296CA5AA00951C77 /* CorrectAnswer.swift in Sources */,
+				E6AB6BF8296CA27B00951C77 /* EndOfGameView.swift in Sources */,
+				E6AB6BFB296CA33C00951C77 /* PlaySoundButton.swift in Sources */,
 				E6AB6BB3296C91FD00951C77 /* Ridna_MovaApp.swift in Sources */,
+				E6AB6C0D296CA6FA00951C77 /* CurrentStageAnswer.swift in Sources */,
+				E6AB6BEE296C9F5900951C77 /* GameViewModel.swift in Sources */,
+				E6AB6C15296CA85A00951C77 /* MainMenu.swift in Sources */,
+				E6AB6BE8296C9E2900951C77 /* GameLogic.swift in Sources */,
+				E6AB6BFD296CA3A400951C77 /* BlackButton.swift in Sources */,
+				E6AB6C09296CA64200951C77 /* CurrRoundView.swift in Sources */,
+				E6AB6BF6296CA1B900951C77 /* HowToPlay.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
