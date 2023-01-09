@@ -1,7 +1,7 @@
 //
 //  Ridna_MovaApp.swift
 //  Ridna Mova
-//
+//  App starts here
 //  Created by Yevhenii Ganusich on 1/9/23.
 //
 
