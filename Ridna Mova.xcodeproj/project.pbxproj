@@ -40,6 +40,7 @@
 		E6AB6C15296CA85A00951C77 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AB6C14296CA85A00951C77 /* MainMenu.swift */; };
 		E6B058B7296CACAB00F87A38 /* food.txt in Resources */ = {isa = PBXBuildFile; fileRef = E6B058B6296CACAB00F87A38 /* food.txt */; };
 		E6B058B9296CACDF00F87A38 /* animals.txt in Resources */ = {isa = PBXBuildFile; fileRef = E6B058B8296CACDF00F87A38 /* animals.txt */; };
+		E6B058C1296CAF5A00F87A38 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E6B058C3296CAF5A00F87A38 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,7 @@
 		E6AB6C14296CA85A00951C77 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
 		E6B058B6296CACAB00F87A38 /* food.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = food.txt; sourceTree = "<group>"; };
 		E6B058B8296CACDF00F87A38 /* animals.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = animals.txt; sourceTree = "<group>"; };
+		E6B058C2296CAF5A00F87A38 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 				E6B058B6296CACAB00F87A38 /* food.txt */,
 				E6AB6BB6296C91FE00951C77 /* Assets.xcassets */,
 				E6AB6BB8296C91FE00951C77 /* Preview Content */,
+				E6B058C3296CAF5A00F87A38 /* Localizable.strings */,
 			);
 			path = "Ridna Mova";
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6B058C1296CAF5A00F87A38 /* Localizable.strings in Resources */,
 				E6AB6BBA296C91FE00951C77 /* Preview Assets.xcassets in Resources */,
 				E6B058B7296CACAB00F87A38 /* food.txt in Resources */,
 				E6B058B9296CACDF00F87A38 /* animals.txt in Resources */,
@@ -437,6 +441,17 @@
 			targetProxy = E6AB6BCA296C91FE00951C77 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E6B058C3296CAF5A00F87A38 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E6B058C2296CAF5A00F87A38 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		E6AB6BD1296C91FE00951C77 /* Debug */ = {
