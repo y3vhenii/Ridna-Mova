@@ -63,9 +63,6 @@ struct EndOfGameView: View{
                     self.opacity = 1.0
                 }
             }
-            .onDisappear{
-                
-            }
         }
     }
 }
