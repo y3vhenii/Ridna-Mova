@@ -96,6 +96,9 @@
 		E6AB6BB1296C91FD00951C77 /* Ridna Mova */ = {
 			isa = PBXGroup;
 			children = (
+				E6AB6BE0296C9A5700951C77 /* ViewModels */,
+				E6AB6BDE296C9A3000951C77 /* Views */,
+				E6AB6BDF296C9A4000951C77 /* Models */,
 				E6AB6BB2296C91FD00951C77 /* Ridna_MovaApp.swift */,
 				E6AB6BB4296C91FD00951C77 /* ContentView.swift */,
 				E6AB6BB6296C91FE00951C77 /* Assets.xcassets */,
@@ -128,6 +131,27 @@
 				E6AB6BCF296C91FE00951C77 /* Ridna_MovaUITestsLaunchTests.swift */,
 			);
 			path = "Ridna MovaUITests";
+			sourceTree = "<group>";
+		};
+		E6AB6BDE296C9A3000951C77 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E6AB6BDF296C9A4000951C77 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E6AB6BE0296C9A5700951C77 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
