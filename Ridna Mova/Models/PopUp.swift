@@ -1,7 +1,7 @@
 //
 //  PopUp.swift
 //  Ridna Mova
-//
+//  Pop up behavior is managed here
 //  Created by Yevhenii Ganusich on 1/9/23.
 //
 

@@ -1,7 +1,7 @@
 //
 //  GameLogic.swift
 //  Ridna Mova
-//
+//  Model: Game logic is handled here
 //  Created by Yevhenii Ganusich on 1/9/23.
 //
 
