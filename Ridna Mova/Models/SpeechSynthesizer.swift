@@ -8,11 +8,20 @@
 import Foundation
 import AVFoundation
 
-struct Speech {
+struct UkrSpeech {
     let speechSynthesizer = AVSpeechSynthesizer()
     func saySomething(whattToSay: String) -> Void{
         let utterance = AVSpeechUtterance(string: whattToSay)
         utterance.voice = AVSpeechSynthesisVoice(language: "uk-UA")
+        speechSynthesizer.speak(utterance)
+    }
+}
+
+struct EngSpeech {
+    let speechSynthesizer = AVSpeechSynthesizer()
+    func saySomething(whattToSay: String) -> Void{
+        let utterance = AVSpeechUtterance(string: whattToSay)
+        utterance.voice = AVSpeechSynthesisVoice(language: "en-US")
         speechSynthesizer.speak(utterance)
     }
 }
