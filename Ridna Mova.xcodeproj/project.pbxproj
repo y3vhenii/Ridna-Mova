@@ -25,7 +25,7 @@
 		E6AB6BF4296CA0E400951C77 /* HowToPlayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AB6BF3296CA0E400951C77 /* HowToPlayViewModel.swift */; };
 		E6AB6BF6296CA1B900951C77 /* HowToPlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AB6BF5296CA1B900951C77 /* HowToPlay.swift */; };
 		E6AB6BF8296CA27B00951C77 /* EndOfGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AB6BF7296CA27B00951C77 /* EndOfGameView.swift */; };
-		E6AB6BFB296CA33C00951C77 /* PlaySoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AB6BFA296CA33C00951C77 /* PlaySoundButton.swift */; };
+		E6AB6BFB296CA33C00951C77 /* UkrPlaySoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AB6BFA296CA33C00951C77 /* UkrPlaySoundButton.swift */; };
 		E6AB6BFD296CA3A400951C77 /* BlackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AB6BFC296CA3A400951C77 /* BlackButton.swift */; };
 		E6AB6C00296CA42100951C77 /* VStackExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AB6BFF296CA42100951C77 /* VStackExtensions.swift */; };
 		E6AB6C02296CA55200951C77 /* StartupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AB6C01296CA55200951C77 /* StartupView.swift */; };
@@ -41,6 +41,7 @@
 		E6B058B7296CACAB00F87A38 /* food.txt in Resources */ = {isa = PBXBuildFile; fileRef = E6B058B6296CACAB00F87A38 /* food.txt */; };
 		E6B058B9296CACDF00F87A38 /* animals.txt in Resources */ = {isa = PBXBuildFile; fileRef = E6B058B8296CACDF00F87A38 /* animals.txt */; };
 		E6B058C1296CAF5A00F87A38 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E6B058C3296CAF5A00F87A38 /* Localizable.strings */; };
+		E6B058C5296CD0F300F87A38 /* PlayHint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B058C4296CD0F300F87A38 /* PlayHint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,7 +83,7 @@
 		E6AB6BF3296CA0E400951C77 /* HowToPlayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToPlayViewModel.swift; sourceTree = "<group>"; };
 		E6AB6BF5296CA1B900951C77 /* HowToPlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToPlay.swift; sourceTree = "<group>"; };
 		E6AB6BF7296CA27B00951C77 /* EndOfGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndOfGameView.swift; sourceTree = "<group>"; };
-		E6AB6BFA296CA33C00951C77 /* PlaySoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySoundButton.swift; sourceTree = "<group>"; };
+		E6AB6BFA296CA33C00951C77 /* UkrPlaySoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UkrPlaySoundButton.swift; sourceTree = "<group>"; };
 		E6AB6BFC296CA3A400951C77 /* BlackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackButton.swift; sourceTree = "<group>"; };
 		E6AB6BFF296CA42100951C77 /* VStackExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VStackExtensions.swift; sourceTree = "<group>"; };
 		E6AB6C01296CA55200951C77 /* StartupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupView.swift; sourceTree = "<group>"; };
@@ -98,6 +99,7 @@
 		E6B058B6296CACAB00F87A38 /* food.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = food.txt; sourceTree = "<group>"; };
 		E6B058B8296CACDF00F87A38 /* animals.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = animals.txt; sourceTree = "<group>"; };
 		E6B058C2296CAF5A00F87A38 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E6B058C4296CD0F300F87A38 /* PlayHint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayHint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,8 +236,9 @@
 		E6AB6BF9296CA31C00951C77 /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
-				E6AB6BFA296CA33C00951C77 /* PlaySoundButton.swift */,
+				E6AB6BFA296CA33C00951C77 /* UkrPlaySoundButton.swift */,
 				E6AB6BFC296CA3A400951C77 /* BlackButton.swift */,
+				E6B058C4296CD0F300F87A38 /* PlayHint.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -393,12 +396,13 @@
 				E6AB6C07296CA5DF00951C77 /* IncorrectAnswer.swift in Sources */,
 				E6AB6C0F296CA73200951C77 /* TopBar.swift in Sources */,
 				E6AB6C13296CA7DD00951C77 /* GameView.swift in Sources */,
+				E6B058C5296CD0F300F87A38 /* PlayHint.swift in Sources */,
 				E6AB6BE4296C9D9000951C77 /* MainMenuLogic.swift in Sources */,
 				E6AB6BF2296CA0B700951C77 /* MainMenuViewModel.swift in Sources */,
 				E6AB6C11296CA78800951C77 /* Rules.swift in Sources */,
 				E6AB6C04296CA5AA00951C77 /* CorrectAnswer.swift in Sources */,
 				E6AB6BF8296CA27B00951C77 /* EndOfGameView.swift in Sources */,
-				E6AB6BFB296CA33C00951C77 /* PlaySoundButton.swift in Sources */,
+				E6AB6BFB296CA33C00951C77 /* UkrPlaySoundButton.swift in Sources */,
 				E6AB6BB3296C91FD00951C77 /* Ridna_MovaApp.swift in Sources */,
 				E6AB6C0D296CA6FA00951C77 /* CurrentStageAnswer.swift in Sources */,
 				E6AB6BEE296C9F5900951C77 /* GameViewModel.swift in Sources */,
@@ -579,11 +583,13 @@
 				DEVELOPMENT_TEAM = TFX2DTSXL2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Ridna Mova";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.word-games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -608,11 +614,13 @@
 				DEVELOPMENT_TEAM = TFX2DTSXL2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Ridna Mova";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.word-games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

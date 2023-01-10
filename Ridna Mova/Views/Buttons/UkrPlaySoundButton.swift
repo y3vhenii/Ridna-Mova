@@ -8,16 +8,18 @@
 import SwiftUI
 import Speech
 
-struct PlaySoundButton: View {
+struct UkrPlaySoundButton: View {
     @ObservedObject var game: GameViewModel
-    var speech: Speech = Speech()
+    var speech: UkrSpeech = UkrSpeech()
     
     var body: some View {
         Button(action:{ speech.saySomething(whattToSay: NSLocalizedString(game.getCorrectAnswer(currStage: game.getCurrentStageImages()), comment:""))}){
-            Image(systemName: "play.circle")
-                .font(Font.system(.largeTitle))
-                .foregroundColor(Color.black)
-                .padding(.bottom)
+            Text("🔊🇺🇦")
+                .font(Font.system(.title))
+                .padding(.leading)
+                .padding(.trailing)
         }
+        .background(Color.gray.opacity(0.6))
+        .clipShape(Capsule())
     }
 }
