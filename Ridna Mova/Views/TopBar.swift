@@ -17,7 +17,7 @@ struct TopBar: View {
             Button(action: { game.toggleRulesPopUp() }) {
                 VStack{
                     Text("Game rules")
-                    Image(systemName: "gamecontroller.fill")
+                    Text("🎮")
                 }.padding()
             }.frame(maxWidth: .infinity)
             
@@ -25,7 +25,7 @@ struct TopBar: View {
             Button(action: { game.newGame(category: game.getCurrCategory()) }) {
                 VStack{
                     Text("Restart Game")
-                    Image(systemName: "repeat.circle.fill")
+                    Text("🔄")
                 }.padding()
             }.frame(maxWidth: .infinity)
             
@@ -33,7 +33,7 @@ struct TopBar: View {
             Button(action: { mainMenu.toggleMainMenuView() }){
                 VStack{
                     Text("Main menu")
-                    Image(systemName: "house.fill")
+                    Text("🏠")
                 }.padding()
             }.frame(maxWidth: .infinity)
             
@@ -41,7 +41,7 @@ struct TopBar: View {
             VStack{
                 Text("Scores")
                 Text(String(game.getScores()) + "/10")
-                Image(systemName: "plusminus.circle.fill")
+                Text("📊")
             }
             .padding()
             .frame(maxWidth:.infinity)
