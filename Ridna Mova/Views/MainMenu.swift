@@ -21,7 +21,7 @@ struct MainMenu: View {
             ZStack{
                 Color.yellow.ignoresSafeArea()
                 VStack {
-                    Image(systemName: "house")
+                    Text("🏠")
                         .font(.largeTitle)
                         .padding(.top)
                     Text("Main menu")
