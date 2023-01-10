@@ -29,7 +29,10 @@ struct GameView: View {
                 VStack{
                     TopBar(game: game, mainMenu: mainMenuView)
                     CurrentStageAnswer(game: game)
-                    PlaySoundButton(game: game)
+                    HStack{
+                        UkrPlaySoundButton(game: game)
+                        PlayHint(game: game)
+                    }
                     PictureGrid(game: game)
                     CurrRoundView(game: game)
                 }
