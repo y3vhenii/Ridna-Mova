@@ -17,10 +17,8 @@ struct StartupView: View {
         ZStack{
             Color.yellow.ignoresSafeArea()
             VStack{
-                Image(systemName: "globe.europe.africa.fill")
-                    .foregroundColor(.black)
-                    .font(.system(size: 40))
-                    .shadow(radius: 0.9)
+                Text("🌍")
+                    .font(.largeTitle)
                 Text("Ridna Mova")
                     .foregroundColor(.black)
                     .bold()
@@ -28,29 +26,26 @@ struct StartupView: View {
                     .frame(maxWidth: .infinity)
                     .multilineTextAlignment(.center)
                     .shadow(radius: 0.9)
-                Text("Learn Ukrainian the easy way").foregroundColor(Color.black)
+                Text("🇺🇦 Learn Ukrainian the easy way 🇺🇦").foregroundColor(Color.black)
                     
                 Spacer()
                 VStack{
                     HStack{
-                        Image(systemName: "brain.head.profile")
-                        Text("Learn")
+                        Text("🙇‍♂️ Learn")
                     }.padding()
                     
                     HStack{
-                        Image(systemName: "gamecontroller.fill")
-                        Text("Play")
+                        Text("🎮 Play")
                     }.padding()
                     
                     HStack{
-                        Image(systemName: "figure.stairs")
-                        Text("Grow")
+                        Text("📈 Grow")
                     }.padding()
                 }
                 .font(.largeTitle)
                 .foregroundColor(Color.black)
                 Spacer()
-                Text("Designed and developed by Yevhenii Ganusich").foregroundColor(.black)
+                Text("Developed by Yevhenii Ganusich 🙋‍♂️").foregroundColor(.black)
             }
             .scaleEffect(size)
             .opacity(opacity)
