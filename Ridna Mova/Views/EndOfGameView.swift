@@ -21,36 +21,35 @@ struct EndOfGameView: View{
                 Text("Game Over")
                     .fontWeight(.bold)
                     .font(.largeTitle)
-                Image(systemName: "flag.checkered.2.crossed")
+                Text("🏁")
                     .font(.largeTitle)
-                    .padding(.bottom)
                 Text("Your points are:")
                 Text(String(game.getScores()) + "/10").font(.callout)
                 
                 if (game.getScores() >= 8){
                     VStack{
                         Text("Message:").bold()
-                        Text("Well done! You're doing great. If you feel like you know this category well, try other categories that you can select in the main menu. Once again, good job!")
+                        Text("Well done! 👍🏼 You're doing great. If you feel like you know this category well 💯, try other categories that you can select in the 🏠 main menu. 🎉 Once again, good job!")
                     }.endOfGameMessage()
                 }
                 else if (game.getScores() < 8 && game.getScores() >= 5){
                     VStack{
                         Text("Message:").bold()
-                        Text("You're doing great, but you still need to practice a little more. Continue practicing in this category by pressing restart button. When you get confident enough, try yourself in other categories as well.")
+                        Text("You're doing great 👍🏼, but you still need to practice a little 🤏 more. Continue practicing in this category by pressing 🔄 restart button. When you get confident enough 💯, try yourself in other categories as well.")
                     }.endOfGameMessage()
                 }
                 else{
                     VStack{
                         Text("Message:").bold()
-                        Text("You still have a lot of room for improvement. Keep playing in this cateogory to improve your knowledge in this topic. Once you get more confident and your scores improve, try yourself in other categories as well.")
+                        Text("You still have a lot of room for improvement 🤔. Keep playing 🔄 in this cateogory to improve your knowledge in this topic. Once you get more confident 💯 and your scores improve 📈, try yourself in other categories as well.")
                     }.endOfGameMessage()
                 }
                     
-                Button("Restart the game"){
+                Button("🔄 Restart the game"){
                     game.newGame(category: game.getCurrCategory())
                 }.buttonStyle(BlackButton())
                         
-                Button("Main menu"){
+                Button("🏠 Main menu"){
                     mainMenu.toggleMainMenuView()
                 }.buttonStyle(BlackButton())
             }
