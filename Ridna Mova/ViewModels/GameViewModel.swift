@@ -119,4 +119,12 @@ class GameViewModel: ObservableObject{
     func getCurrentGameStage() -> Int{
         return model.getCurrentStage()
     }
+    
+    func isUIActive() -> Bool{
+        return model.uiActionsEnabled()
+    }
+    
+    func uiActionToggle(){
+        model.toggleUIActions()
+    }
 }

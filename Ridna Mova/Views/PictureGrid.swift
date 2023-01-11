@@ -23,19 +23,25 @@ struct PictureGrid: View {
                         .scaledToFit()
                         .frame(width: geo.size.width/widthDownScale, height: geo.size.width/heightDownScale)
                         .onTapGesture(){
-                            if game.imageSelectedCorrectly(imageSet: game.getCurrentStageImages(), imageSelected: game.getCurrentStageImages()[i]){
+                            if game.isUIActive() && game.imageSelectedCorrectly(imageSet: game.getCurrentStageImages(), imageSelected: game.getCurrentStageImages()[i]){
+                                game.uiActionToggle()   // Turn off UI responsiveness
                                 game.toggleCorrectState()
                                 DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                                     game.toggleCorrectState()
                                     game.increaseScore()
                                     game.nextLevel()
+                                    game.uiActionToggle()   // Turn on UI
                                 }
                             }
                             else {
-                                game.toggleIncorrectState()
-                                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                                if game.isUIActive(){
+                                    game.uiActionToggle()   // Turn off UI responsiveness
                                     game.toggleIncorrectState()
-                                    game.nextLevel()
+                                    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                                        game.toggleIncorrectState()
+                                        game.nextLevel()
+                                        game.uiActionToggle()   // Turn on UI responsiveness
+                                    }
                                 }
                             }
                         }

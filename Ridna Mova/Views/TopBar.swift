@@ -14,7 +14,11 @@ struct TopBar: View {
     var body: some View {
         HStack{
             // Game rules button
-            Button(action: { game.toggleRulesPopUp() }) {
+            Button(action: {
+                if (game.isUIActive()){
+                    game.toggleRulesPopUp()
+                }
+            }) {
                 VStack{
                     Text("Game rules")
                     Text("🎮")
@@ -22,7 +26,11 @@ struct TopBar: View {
             }.frame(maxWidth: .infinity)
             
             // Game restart button
-            Button(action: { game.newGame(category: game.getCurrCategory()) }) {
+            Button(action: {
+                if (game.isUIActive()){
+                    game.newGame(category: game.getCurrCategory())
+                }
+            }) {
                 VStack{
                     Text("Restart Game")
                     Text("🔄")
@@ -30,7 +38,11 @@ struct TopBar: View {
             }.frame(maxWidth: .infinity)
             
             // Main menu button
-            Button(action: { mainMenu.toggleMainMenuView() }){
+            Button(action: {
+                if (game.isUIActive()){
+                    mainMenu.toggleMainMenuView()
+                }
+            }) {
                 VStack{
                     Text("Main menu")
                     Text("🏠")

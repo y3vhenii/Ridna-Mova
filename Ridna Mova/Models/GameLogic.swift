@@ -19,6 +19,7 @@ struct GameLogic{
     let maxStage: Int = 9
     var gameDidStart: Bool = false
     var category: String
+    var allUIActionsEnabled: Bool = true
     var availableCategories: [String] = ["Animals", "Food"]
     
     func getCurrStageImages() -> [String]{
@@ -82,5 +83,13 @@ struct GameLogic{
     
     func getAvailableCategories() -> [String]{
         return availableCategories
+    }
+    
+    func uiActionsEnabled() -> Bool{
+        return allUIActionsEnabled
+    }
+    
+    mutating func toggleUIActions(){
+        allUIActionsEnabled.toggle()
     }
 }
