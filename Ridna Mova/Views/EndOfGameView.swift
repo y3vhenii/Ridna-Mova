@@ -18,11 +18,12 @@ struct EndOfGameView: View{
         ZStack{
             Color.yellow.ignoresSafeArea()
             VStack{
+                Text("🏁")
+                    .font(.largeTitle)
                 Text("Game Over")
                     .fontWeight(.bold)
                     .font(.largeTitle)
-                Text("🏁")
-                    .font(.largeTitle)
+                
                 Text("Your points are:")
                 Text(String(game.getScores()) + "/10").font(.callout)
                 
