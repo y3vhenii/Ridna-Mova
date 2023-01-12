@@ -31,7 +31,9 @@ struct GameView: View {
                     CurrentStageAnswer(game: game)
                     HStack{
                         UkrPlaySoundButton(game: game)
-                        PlayHint(game: game)
+                        if game.totalHintsUsed() < game.maxHintsPossible(){
+                            PlayHint(game: game)
+                        }
                     }
                     PictureGrid(game: game)
                     CurrRoundView(game: game)

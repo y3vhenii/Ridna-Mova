@@ -16,6 +16,8 @@ struct GameLogic{
     var correctAnswerState: Bool
     var incorrectAnswerState: Bool
     var nextStage: Int
+    var totalHints: Int = 0
+    let maxTotalHints: Int = 3
     let maxStage: Int = 9
     var gameDidStart: Bool = false
     var category: String
@@ -91,5 +93,13 @@ struct GameLogic{
     
     mutating func toggleUIActions(){
         allUIActionsEnabled.toggle()
+    }
+    
+    func hintsUsed() -> Int{
+        return totalHints
+    }
+    
+    mutating func incrementHintsUsed(){
+        totalHints += 1
     }
 }

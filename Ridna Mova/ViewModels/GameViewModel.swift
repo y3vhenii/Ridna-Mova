@@ -127,4 +127,16 @@ class GameViewModel: ObservableObject{
     func uiActionToggle(){
         model.toggleUIActions()
     }
+    
+    func totalHintsUsed() -> Int{
+        return model.hintsUsed()
+    }
+    
+    func hintUsed(){
+        model.incrementHintsUsed()
+    }
+    
+    func maxHintsPossible() -> Int{
+        return model.maxTotalHints
+    }
 }

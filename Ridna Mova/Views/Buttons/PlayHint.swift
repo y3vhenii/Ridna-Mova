@@ -13,7 +13,13 @@ struct PlayHint: View {
     var speech: EngSpeech = EngSpeech()
     
     var body: some View {
-        Button(action:{ speech.saySomething(whattToSay: game.getCorrectAnswer(currStage: game.getCurrentStageImages()))}) {
+        Button(action:{
+            speech.saySomething(whattToSay: game.getCorrectAnswer(currStage: game.getCurrentStageImages()))
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                game.hintUsed();
+            }
+            })
+        {
             Text("🔊🏴󠁧󠁢󠁥󠁮󠁧󠁿")
                 .font(Font.system(.title))
                 .padding(.leading)

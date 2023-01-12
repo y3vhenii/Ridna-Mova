@@ -22,7 +22,7 @@ struct TopBar: View {
                 VStack{
                     Text("Game rules")
                     Text("🎮")
-                }.padding()
+                }
             }.frame(maxWidth: .infinity)
             
             // Game restart button
@@ -34,7 +34,7 @@ struct TopBar: View {
                 VStack{
                     Text("Restart Game")
                     Text("🔄")
-                }.padding()
+                }
             }.frame(maxWidth: .infinity)
             
             // Main menu button
@@ -46,8 +46,16 @@ struct TopBar: View {
                 VStack{
                     Text("Main menu")
                     Text("🏠")
-                }.padding()
+                }
             }.frame(maxWidth: .infinity)
+            
+            // Hints used
+            VStack{
+                Text("Hints")
+                Text(String(game.totalHintsUsed()) + "/3")
+                Text("💡")
+            }
+            .frame(maxWidth:.infinity)
             
             // Scores of the game
             VStack{
@@ -55,9 +63,10 @@ struct TopBar: View {
                 Text(String(game.getScores()) + "/10")
                 Text("📊")
             }
-            .padding()
             .frame(maxWidth:.infinity)
         }
+        .padding(.bottom)
+        .padding(.top)
         .foregroundColor(Color.black)
         .background(Color.blue)
     }
