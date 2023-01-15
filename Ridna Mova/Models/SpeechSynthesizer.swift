@@ -1,5 +1,5 @@
 //
-//  SpeechSynthesizer.swift
+//  SpeechSynthesizer.swift (Not used anymore)
 //  Ridna Mova
 //  Used to make string values audible in Ukrainian
 //  Created by Yevhenii Ganusich on 1/9/23.
