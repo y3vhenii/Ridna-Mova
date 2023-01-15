@@ -6,14 +6,13 @@
 //
 
 import SwiftUI
-import Speech
+import Foundation
 
 struct UkrPlaySoundButton: View {
     @ObservedObject var game: GameViewModel
-    var speech: UkrSpeech = UkrSpeech()
-    
+    // NSLocalizedString(game.getCorrectAnswer(currStage: game.getCurrentStageImages()), comment:"")
     var body: some View {
-        Button(action:{ speech.saySomething(whattToSay: NSLocalizedString(game.getCorrectAnswer(currStage: game.getCurrentStageImages()), comment:""))}){
+        Button(action:{ SpeechService.shared.speak(text: NSLocalizedString(game.getCorrectAnswer(currStage: game.getCurrentStageImages()), comment:""), voiceType: VoiceType.standardFemaleUkr, language:LanguageCode.ukrUkrainian, completion: voicePlayFinished)}){
             Text("🔊🇺🇦")
                 .font(Font.system(.title))
                 .padding(.leading)
@@ -21,5 +20,9 @@ struct UkrPlaySoundButton: View {
         }
         .background(Color.gray.opacity(0.6))
         .clipShape(Capsule())
+    }
+    
+    func voicePlayFinished() -> Void {
+        print("Ukrainian word played.")
     }
 }
