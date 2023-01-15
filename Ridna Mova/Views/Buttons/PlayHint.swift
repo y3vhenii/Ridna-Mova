@@ -14,7 +14,7 @@ struct PlayHint: View {
     
     var body: some View {
         Button(action:{
-            speech.saySomething(whattToSay: game.getCorrectAnswer(currStage: game.getCurrentStageImages()))
+            SpeechService.shared.speak(text: game.getCorrectAnswer(currStage: game.getCurrentStageImages()), voiceType: VoiceType.standardFemaleEng, language:LanguageCode.usEnglish, completion: voicePlayFinished)
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                 game.hintUsed();
             }
@@ -27,5 +27,9 @@ struct PlayHint: View {
         }
         .background(Color.gray.opacity(0.6))
         .clipShape(Capsule())
+    }
+    
+    func voicePlayFinished() -> Void {
+        print("Hint played.")
     }
 }
