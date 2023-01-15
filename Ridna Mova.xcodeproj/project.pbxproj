@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E64E67132974A0F2000D07E1 /* TextToVoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64E67122974A0F2000D07E1 /* TextToVoice.swift */; };
+		E64E67152974AB9C000D07E1 /* VoiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64E67142974AB9C000D07E1 /* VoiceType.swift */; };
+		E64E67172974ABEB000D07E1 /* LanguageCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64E67162974ABEB000D07E1 /* LanguageCodes.swift */; };
 		E6AB6BB3296C91FD00951C77 /* Ridna_MovaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AB6BB2296C91FD00951C77 /* Ridna_MovaApp.swift */; };
 		E6AB6BB7296C91FE00951C77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6AB6BB6296C91FE00951C77 /* Assets.xcassets */; };
 		E6AB6BBA296C91FE00951C77 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6AB6BB9296C91FE00951C77 /* Preview Assets.xcassets */; };
@@ -62,6 +65,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E64E67122974A0F2000D07E1 /* TextToVoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextToVoice.swift; sourceTree = "<group>"; };
+		E64E67142974AB9C000D07E1 /* VoiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceType.swift; sourceTree = "<group>"; };
+		E64E67162974ABEB000D07E1 /* LanguageCodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageCodes.swift; sourceTree = "<group>"; };
 		E6AB6BAF296C91FD00951C77 /* Ridna Mova.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ridna Mova.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6AB6BB2296C91FD00951C77 /* Ridna_MovaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ridna_MovaApp.swift; sourceTree = "<group>"; };
 		E6AB6BB6296C91FE00951C77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -127,6 +133,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E64E67112974A0D6000D07E1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E64E67122974A0F2000D07E1 /* TextToVoice.swift */,
+				E64E67142974AB9C000D07E1 /* VoiceType.swift */,
+				E64E67162974ABEB000D07E1 /* LanguageCodes.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		E6AB6BA6296C91FD00951C77 = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +166,7 @@
 		E6AB6BB1296C91FD00951C77 /* Ridna Mova */ = {
 			isa = PBXGroup;
 			children = (
+				E64E67112974A0D6000D07E1 /* Services */,
 				E6AB6BDE296C9A3000951C77 /* Views */,
 				E6AB6BE0296C9A5700951C77 /* ViewModels */,
 				E6AB6BDF296C9A4000951C77 /* Models */,
@@ -384,6 +401,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E64E67172974ABEB000D07E1 /* LanguageCodes.swift in Sources */,
+				E64E67152974AB9C000D07E1 /* VoiceType.swift in Sources */,
 				E6AB6BE2296C9D5500951C77 /* HowToPlayLogic.swift in Sources */,
 				E6AB6BEC296C9EEB00951C77 /* PopUp.swift in Sources */,
 				E6AB6BF4296CA0E400951C77 /* HowToPlayViewModel.swift in Sources */,
@@ -402,6 +421,7 @@
 				E6AB6C11296CA78800951C77 /* Rules.swift in Sources */,
 				E6AB6C04296CA5AA00951C77 /* CorrectAnswer.swift in Sources */,
 				E6AB6BF8296CA27B00951C77 /* EndOfGameView.swift in Sources */,
+				E64E67132974A0F2000D07E1 /* TextToVoice.swift in Sources */,
 				E6AB6BFB296CA33C00951C77 /* UkrPlaySoundButton.swift in Sources */,
 				E6AB6BB3296C91FD00951C77 /* Ridna_MovaApp.swift in Sources */,
 				E6AB6C0D296CA6FA00951C77 /* CurrentStageAnswer.swift in Sources */,
