@@ -1,7 +1,6 @@
-# Ridna Mova: Learn Ukrainian the easy way
+# ✨ Ridna Mova: Learn Ukrainian the easy way ✨
 ## 💡 Idea behind the App
-I wanted to create the app that can easily teach a new language without too much stress. I decided to create an application that can teach to
-pronounce words in Ukrainian, be able to learn how they are written in Ukrainian and be able to memorize words by associating them with pictures.
+Ridna Mova means "Native Language" in Ukrainian. I wanted to create the app that can easily teach Ukrainian language without too much stress. I decided to create an application that can teach to pronounce words in Ukrainian, be able to learn how they are written in Ukrainian and be able to memorize words by associating them with pictures. The idea is to select the image that properly represents the word being displayed on the screen. The user can listen to pronunciation of the word in Ukrainian. Also the user has 3 attempts per game to hear the word translated back to English. The English button disappears when all attempts are used.
 ## 🔧 Technicalities
 #### Platform: iOS 🍎
 #### Language used: Swift
@@ -12,7 +11,7 @@ pronounce words in Ukrainian, be able to learn how they are written in Ukrainian
 Application is still under development. There are still a few UI issues that need to be resolved before the App becomes available in the App store.
 There is also some content being sourced for the game to make it more interactive. It will be completely free, and will become available as soon as 
 possible.
-## Screenshots of the app
+## 📷 Screenshots of the app
 | Screenshot  | Description |
 | ------------- | ------------- |
 | <img src="https://user-images.githubusercontent.com/33880254/212576374-c64bf53a-f5f8-4998-9183-9012942a3887.jpg" height="500">  | <h1>Startup Screen</h1> |
