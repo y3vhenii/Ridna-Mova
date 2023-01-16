@@ -1,4 +1,4 @@
-# 🇺🇦 Ridna Mova: Learn Ukrainian the easy way
+# Ridna Mova: Learn Ukrainian the easy way
 ## 💡 Idea behind the App
 I wanted to create the app that can easily teach a new language without too much stress. I decided to create an application that can teach to
 pronounce words in Ukrainian, be able to learn how they are written in Ukrainian and be able to memorize words by associating them with pictures.
